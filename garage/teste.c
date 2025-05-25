@@ -1,10 +1,7 @@
 #include <stdio.h>
-
-char nome[20];
-int lin;
 int main() {
-	for (lin=0; lin<40; lin++){
-		printf("Digite um nome: ");
-		scanf("%s", nome[lin]);
-	}
+	char nomeCidade[60];
+	printf("Digite o nome da cidade: ");
+	scanf("%s[60]", &nomeCidade);
+	printf("Nome da cidade: %s\n", nomeCidade);
 }
