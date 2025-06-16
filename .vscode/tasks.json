@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar C (dinâmico)",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
+// This task compiles the current C file into an executable with the same name as the source file.
